@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity | Flappy Bird </title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/flappy_penguin.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+
+    <div style="text-align: center;">
+      <h1 class="title">Flappy Penguin</h1>
+    </div>
+    <div class="webgl-content" >
+      <div style="text-align: center;">
+        <div style="width: 500px; margin: 0 auto;">
+          <div id="unityContainer" style="width: 500px; height: 700px;"></div>
+        </div>
+      </div>
+
+      <!-- <div style="margin-left: auto; margin-right: auto;">
+        <div id="unityContainer" style="width: 500px; height: 600px;"></div>
+      </div> -->
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title"><b>Full screen</b></div>
+        <br>
+        <br>
+        <div style="background-color: #d9eaff; padding: 30px">
+          <p> <b style="font-size: 22px">Developer:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kuan-Hao, Chao</p>
+          <br>
+          <p> <b style="font-size: 22px">Contact:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; kuanhao.chao@gmail.com</p>
+          <br>
+          <p style=" margin-bottom: 10px;"> <b style="font-size: 22px;">How to play:</b></p>
+          <p  style="margin-left: 170px; margin-top: -45px">Play <b>Flappy Penguin</b> here online for free. Click on the screen to fly. Fly the jet penguin as far as you can without hitting the pipes. Good luck!</p>
+        </div>
+        <p style="margin-bottom: 100px"></p>
+      </div>
+    </div>
+  </body>
+</html>
